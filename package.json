@@ -1,6 +1,6 @@
 {
     "name": "cordova-plugin-foreground-service",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Foreground service with ongoing notification.",
     "cordova": {
       "id": "cordova-plugin-foreground-service",

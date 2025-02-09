@@ -35,10 +35,21 @@ public class ForegroundPlugin extends CordovaPlugin {
 
                 // Stop the service
                 activity.getApplicationContext().startService(intent);
+            } else if (action.equals("moveToBackground")){
+                this.moveToBackground();
             }
         }
 
         command.success();
         return true;
+    }
+
+    private void moveToBackground()
+    {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+
+        intent.addCategory(Intent.CATEGORY_HOME);
+
+        cordova.getActivity().startActivity(intent);
     }
 }
