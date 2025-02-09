@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 - 09-02-2025
+
+- Added FOREGROUND_SERVICE_SPECIAL_USE permission
+
 ## 1.1.3 - 17-12-2019
 
 - Added FOREGROUND_SERVICE permission

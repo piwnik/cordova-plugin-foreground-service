@@ -6,6 +6,7 @@ import android.app.Service;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.content.pm.ServiceInfo;
 import android.os.IBinder;
 import android.os.Bundle;
 import android.annotation.TargetApi;
@@ -86,7 +87,7 @@ public class ForegroundService extends Service {
         }
 
         // Put service in foreground and show notification (id of 0 is not allowed)
-        startForeground(id != 0 ? id : 197812504, notification);
+        startForeground(id != 0 ? id : 197812504, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
     }
 
     @Override
