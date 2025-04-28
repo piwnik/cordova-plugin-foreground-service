@@ -89,7 +89,7 @@ public class ForegroundService extends Service {
         // Put service in foreground and show notification (id of 0 is not allowed)
         id = id != 0 ? id : 197812504;
 
-        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.Q) {
           startForeground(id, notification, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE);
         }
         else {
